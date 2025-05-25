@@ -3,7 +3,24 @@
 
     printf("\n **** cubbins hello from remodel.cc in src/apps/public/remodel.cc **** \n");
 
+it compiles only one file:
+ ./scons.py -j4 mode=release bin extras=static
+compiles with:
+  ./scons.py -j4 mode=release bin
+this source code: src/apps/public/remodel.cc
+to this executable: build/src/release/linux/5.15/64/x86/gcc/11/default/remodel.default.linuxgccrelease
+  g++ -o build/src/release/linux/5.15/64/x86/gcc/11/default/remodel.default.linuxgccrelease
+must be in directory to execute: 
+/home/cubbins/rosetta/tests/integration/new/remodel#
+and, excute with this command in said directory:
+/home/cubbins/rosetta/source/bin/remodel.default.linuxgccrelease -database /home/cubbins/rosetta/database -s 2ci2.renumbered.pdb -remodel:blueprint blueprint.2ci2.remodel -run:chain A -remodel:num_trajectory 2 -overwrite -remodel:quick_and_dirty -testing:INTEGRATION_TEST -out:prefix test1_
+result references provided as: 
+basic.citation_manager.CitationManager:
+The following Rosetta modules were used during this run of Rosetta, and should be cited:
 
+RemodelMover Mover's citation(s):
+Huang PS, Ban YE, Richter F, Andre I, Vernon R, Schief WR, and Baker D.  (2011).  RosettaRemodel: a generalized framework for flexible backbone protein design.  PLoS One 6(8):e24109.  doi: 10.1371/journal.pone.0024109.
+  
 
 
 Rosetta Biomolecular Modeling Library
