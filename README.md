@@ -2,7 +2,7 @@
 5/25/2025
 
     printf("\n **** cubbins hello from remodel.cc in src/apps/public/remodel.cc **** \n");
-
+-note: add two blank spaces after a line to force a line break and carriage feed-  
 it compiles only one file as type static:    
  ./scons.py -j4 mode=release bin extras=static  
 compiles with type as default, given prior new edit:  
