@@ -3,16 +3,16 @@
 
     printf("\n **** cubbins hello from remodel.cc in src/apps/public/remodel.cc **** \n");
 -note: add two blank spaces after a line to force a line break and carriage feed-  
-it compiles only one file as type static:    
+this compiles only one file as type static:    
  ./scons.py -j4 mode=release bin extras=static  
-compiles with type as default, given prior new edit:  
+yet, compiles with type as default, given prior new edit:  
   ./scons.py -j4 mode=release bin  
-this source code: src/apps/public/remodel.cc  
-to this executable: build/src/release/linux/5.15/64/x86/gcc/11/default/remodel.default.linuxgccrelease  
-  g++ -o build/src/release/linux/5.15/64/x86/gcc/11/default/remodel.default.linuxgccrelease  
-must be in directory to execute:   
+for this source code: src/apps/public/remodel.cc  
+producing this executable: build/src/release/linux/5.15/64/x86/gcc/11/default/remodel.default.linuxgccrelease  
+  g++ -o build/src/release/linux/5.15/64/x86/gcc/11/default/remodel.default.linuxgccrelease...    
+must be in this directory to execute:   
 /home/cubbins/rosetta/tests/integration/new/remodel#  
-and, excute with this command in said directory:  
+and, execute with this command in said directory:  
 /home/cubbins/rosetta/source/bin/remodel.default.linuxgccrelease -database /home/cubbins/rosetta/database -s 2ci2.renumbered.pdb -remodel:blueprint blueprint.2ci2.remodel -run:chain A -remodel:num_trajectory 2 -overwrite -remodel:quick_and_dirty -testing:INTEGRATION_TEST -out:prefix test1_  
 result references provided as:   
 basic.citation_manager.CitationManager:  
