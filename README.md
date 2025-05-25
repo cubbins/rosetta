@@ -3,9 +3,11 @@
 
     printf("\n **** cubbins hello from remodel.cc in src/apps/public/remodel.cc **** \n");
 
-it compiles only one file:
+it compiles only one file as type static:
+========================================
  ./scons.py -j4 mode=release bin extras=static
-compiles with:
+compiles with type as default, given prior new edit:
+===================================================
   ./scons.py -j4 mode=release bin
 this source code: src/apps/public/remodel.cc
 to this executable: build/src/release/linux/5.15/64/x86/gcc/11/default/remodel.default.linuxgccrelease
