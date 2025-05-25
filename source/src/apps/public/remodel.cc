@@ -421,6 +421,11 @@ void* graphics_main( void* ) {
 
 
 int main( int argc, char * argv [] ) {
+
+    printf("\n **** cubbins hello from remodel.cc in src/apps/public/remodel.cc **** \n");
+
+
+	
 	try {
 		// check to see if no flags or the -h flag were specified.
 		if ( argc == 1 || ( argc > 1 && strcmp(argv[ 1 ], "-h") == 0 ) ) {
